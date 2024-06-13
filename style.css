@@ -1,0 +1,214 @@
+/* @import url(//db.onlinewebfonts.com/c/c1733d03fa03da0e77d61f11ba8e77de?family=ChurchwardDesignLines-Regular);
+@font-face {font-family: "ChurchwardDesignLines-Regular"; src: url("//db.onlinewebfonts.com/t/c1733d03fa03da0e77d61f11ba8e77de.eot"); src: url("//db.onlinewebfonts.com/t/c1733d03fa03da0e77d61f11ba8e77de.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c1733d03fa03da0e77d61f11ba8e77de.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c1733d03fa03da0e77d61f11ba8e77de.woff") format("woff"), url("//db.onlinewebfonts.com/t/c1733d03fa03da0e77d61f11ba8e77de.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c1733d03fa03da0e77d61f11ba8e77de.svg#ChurchwardDesignLines-Regular") format("svg"); }  */
+
+@font-face {
+    font-family: 'churchward-design-lines';
+    src: url('fonts/churchward-design-lines.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'churchward-design-mysshadow';
+    src: url('fonts/churchward-design-mysshadow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'churchward-design-noend';
+    src: url('fonts/churchward-design-noend.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'churchward-design-revshadow';
+    src: url('fonts/churchward-design-revshadow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'churchward-design';
+    src: url('fonts/churchward-design.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }  
+
+  body {
+    background-color: rgb(0, 51, 0);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: large;
+}
+
+.center {
+    background-color: rgb(0, 51, 0);
+    margin: auto;
+    width: 80%;
+    padding: 0px;
+}
+
+.title {
+    font-family: 'churchward-design-mysshadow', sans-serif;
+    background-color: rgb(0, 51, 0);
+    color: rgb(255, 255, 204);
+    padding: 10px 5px; 
+    margin: 0; 
+    font-size: 65px;
+}
+
+.content-container {
+    background-color: rgb(164,183,146);
+    flex-grow: 1;   
+    padding-bottom: 40px;
+    margin-bottom: 10%;
+}
+
+.section-container {
+    padding: 10px 30px;
+}
+
+.section-title {
+    font-family: 'churchward-design', sans-serif;
+    background-color: rgb(0, 102, 30);
+    color: rgb(0, 51, 0);
+    padding: 0 0px;
+    margin: 0; 
+
+}
+
+.page-title {
+    font-family: 'churchward-design-mysshadow', sans-serif;
+    background-color: rgb(0, 102, 30);
+    color: rgb(0, 51, 0);
+    padding: 10px;
+    margin: 0; 
+    font-size: 40px;
+
+
+}
+
+.section-text {
+    background-color: rgb(0, 102, 30);
+    color:rgb(0, 51, 0);
+    width: 80%;
+    margin: 0; 
+    /* padding: 5px 0px; */
+    padding-left: 4px;
+    padding-bottom: 10px;
+}
+
+.section-image {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.profile-image{
+   min-width: 150% 
+}
+
+
+.links-container {
+    float: left;
+    width: 10%;
+}
+
+.left-links {
+    background-color: #61A0A8;
+    
+    width: 100%;
+    margin-bottom: 20px; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.left-links a {
+    font-family: 'churchward-design', sans-serif;
+    display: block;
+    margin-bottom: 2px;
+    color: rgb(255, 219, 205);
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-top:5px;
+    padding-right:5px;
+    line-height: 0.8;
+
+}
+
+.left-links a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.section-container a {
+    color: #35575C;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.section-container a:hover {
+    color: #4b7c83;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .body {
+        font-size: large;
+    }
+
+    .links-container .left-links a {
+        font-size: 30px; 
+    }
+
+    .title {
+        font-size: 50px; 
+        font-family: 'churchward-design-noend', sans-serif;
+
+    }
+
+    .page-title {
+        font-size: 30px;
+    }
+
+    .links-container {
+        float: none;
+        width: 60%;
+    }
+
+    .center {
+        width: 95%;
+    }
+
+    .section-container {
+        padding: 10px;
+    }
+
+    .section-text {
+        width: 98%;
+    }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 1090px) {
+    .links-container {
+        width: 20%;
+        float: none;
+        font-size: 25px; 
+
+    }
+}
